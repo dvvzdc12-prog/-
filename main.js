@@ -1,13 +1,19 @@
-let name = prompt("Введите ваше имя");
-
-if (name) {
-  let index = confirm("Вам есть 18?");
-
-  if (index) {
-    alert("Вы приняты " + name );
-  } else {
-    alert("Вы нам не подходите");
+function checkNumber() {
+  const userInput = prompt("Введите число:");
+  if (userInput === null) {
+   
+    return;
   }
-} else {
-    alert("Вы не ввели имя");
+
+  const num = Number(userInput);
+
+  if (isNaN(num)) {
+    alert("Введите только числа");
+  } else if (num % 2 === 0) {
+    alert("четное");
+  } else {
+    alert("нечетное");
+  }
 }
+
+checkNumber()
