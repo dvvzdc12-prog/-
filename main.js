@@ -1,18 +1,14 @@
-function checkNumber() {
-  const numStr = prompt("Введите число:");
-  if (numStr === null) {
-    return ;
-  }
+let user = {
+  name: "John",
+  age: 30
+};
 
-  const num = Number(numStr);
+let input = prompt("Введите name или age");
 
-  if (isNaN(num)) {
-    alert("Введите только числа");
-  } else if (num % 2 === 0) {
-    alert("четное");
-  } else {
-    alert("нечетное");
-  }
+if (input === "name") {
+  alert(user.name);
+} else if (input === "age") {
+  alert(user.age);
+} else {
+  alert("Неверный ввод.");
 }
-
-checkNumber();
