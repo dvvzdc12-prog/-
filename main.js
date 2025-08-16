@@ -1,11 +1,10 @@
 function checkNumber() {
-  const userInput = prompt("Введите число:");
-  if (userInput === null) {
-   
-    return;
+  const numStr = prompt("Введите число:");
+  if (numStr === null) {
+    return ;
   }
 
-  const num = Number(userInput);
+  const num = Number(numStr);
 
   if (isNaN(num)) {
     alert("Введите только числа");
@@ -16,4 +15,4 @@ function checkNumber() {
   }
 }
 
-checkNumber()
+checkNumber();
