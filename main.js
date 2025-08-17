@@ -1,14 +1,14 @@
 let user = {
-  name: "John",
-  age: 30
+  name: "имя,
+  age: 15
 };
 
-let input = prompt("Введите name или age");
+let prom = prompt("Введите name или age");
 
-if (input === "name") {
+if (prom == "name") {
   alert(user.name);
-} else if (input === "age") {
+} else if (prom == "age") {
   alert(user.age);
 } else {
-  alert("Неверный ввод.");
+  alert("Такого свойства нет");
 }
