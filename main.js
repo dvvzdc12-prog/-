@@ -1,14 +1,12 @@
-let user = {
-  name: "имя,
-  age: 15
+const user = {
+  name: "Мухаммадзие",
+  age: 14
 };
 
-let prom = prompt("Введите name или age");
-
-if (prom == "name") {
+const cacl = prompt("Введите name или age");
+if (cacl == "name") {
   alert(user.name);
-} else if (prom == "age") {
+}
+else if (cacl == "age") {
   alert(user.age);
-} else {
-  alert("Такого свойства нет");
 }
