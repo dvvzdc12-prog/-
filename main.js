@@ -1,13 +1,8 @@
-let users = [
-  {id: 1, name: "Вася"},
-  {id: 2, name: "Петя"},
-  {id: 3, name: "Маша"}
-];
+const btn = document.getElementById("btn");
+const root = document.getElementById("root");
 
-
-let arr = users.find(cacl => cacl.id === 2);
-console.log(arr); 
-
-
-let arr2 = users.filter(cacl => cacl.id > 1);
-console.log(arr2);
+btn.addEventListener("click", () => {
+  const text = document.createElement("p");
+  text.textContent = "Новое сообщение!";
+  root.appendChild(text);
+});
