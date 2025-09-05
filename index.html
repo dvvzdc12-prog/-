@@ -1,14 +1,39 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body>
-    <button class="btn" id="btn">Добавить сообщение</button>
-    <div id="root"></div>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+
+    <h1 id="title">Hello</h1>
+     <input id="inp" type="text">
+    <button id="btn">click</button>
+   
+    <form id="form">
+        <h2>Форма заплнения</h2>
+        <p>Имя</p>
+        <input type="text" name="userName">
+        <p>Почта</p>
+        <input type="email" name="email">
+        <p>Возраст</p>
+        <input type="number" name="age">
+        <button type="submit">Заполнить</button>
+    </form>
+
+
+    <section class="todolist">
+        <h1>Список задач</h1>
+        <div class="todoTasks">
+            <input type="text" id="taskInp">
+            <button id="taskBtn">Добавить Задачу</button>
+        </div>
+        <ul class="tasks" id="listTasks"></ul>
+    </section>
 
     <script src="./main.js"></script>
-  </body>
+</body>
 </html>

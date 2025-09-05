@@ -1,20 +1,79 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    color: aliceblue;
+}
+
+.todolist{
+    max-width: 1200px;
+    width: 90%;
+    margin: 100px auto;
+    background-color: rgba(69, 69, 69, 0.5);
+    padding: 50px 30px;
+}
+
+.todolist h1{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.todolist .todoTasks input{
+    width: 65%;
+    background-color: transparent;
+    padding: 10px 15px;
+    border: 1px solid rgb(128, 128, 128);
+    border-radius: 15px;
+    color: rgb(255, 255, 255);
+}
+
+.todolist .todoTasks button{
+    padding: 10px;
+    width: 30%;
+    border-radius: 15px;
+    border: 1px solid rgb(128, 128, 128);
+    background-color: black;
+    color: rgb(255, 255, 255);
+};
+
+#listTasks {
+  list-style: none;         
+  padding: 0;
+  margin: 20px auto;
+  max-width: 420px;
+}
 
 
-.btn {
+#listTasks li p {
+  margin: 0;
+  flex: 1;
+  text-align: left;
+  font-size: 16px;
+}
+
+
+#listTasks li button {
+  margin-left: 8px;
+  padding: 6px 10px;
   border: none;
-  background-color: black;
-  color: white;
-  border-radius: 10px;
-  padding: 10px;
+  border-radius: 8px;
   cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  transition: 0.3s;
 }
 
-.btn:hover {
-  background-color: gray;
-  color: black;
+
+#listTasks li button:nth-child(2) {
+  background: #4da6ff;
+  color: #fff;
 }
 
-div {
-  font-size: 20px;
-  color: red;
+#listTasks li button:nth-child(3) {
+  background: #ff4d4d;
+  color: #fff;
 }
